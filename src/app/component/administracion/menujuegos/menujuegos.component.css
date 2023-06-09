@@ -1,0 +1,27 @@
+.example-card {
+  width: 90%;
+  height: 90%;
+  margin: 1% auto;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.imagebox {
+  background: black;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.mat-gridexample{
+  width: auto;
+  height: 90%;
+}
+
