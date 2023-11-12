@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, HostListener, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {PersonaUsuario} from "../../../../models/personaUsuario";
 import {PuntuacionService} from "../../../../services/puntuacion.service";
@@ -14,6 +14,7 @@ export class Juego1Component implements OnInit {
 
   url: string = "https://juego2ie.web.app/";
   urlSafe: SafeResourceUrl;
+  public puntuacionJuego: number = 0; // línea para definir la variable puntuacionJuego
 
   constructor(private puntuacionService:PuntuacionService,
               private _snackBar: MatSnackBar,
@@ -24,6 +25,15 @@ export class Juego1Component implements OnInit {
   ngOnInit(): void {
     this.urlSafe= this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
   }
+
+  @HostListener('window:message', ['$event'])
+onMessage(event) {
+  if (event.data.score) {
+    console.log(event.data.score);
+    this.puntuacionJuego = event.data.score;
+    this.formGrupos.get('puntuacion').setValue(this.puntuacionJuego); 
+  }
+}
 
   formGrupos = new FormGroup({
     id: new FormControl<Number>(null),

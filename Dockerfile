@@ -1,4 +1,4 @@
-FROM node:16-alpine as builld-step
+FROM node:16-alpine as build-step
 
 RUN mkdir -p /app
 
@@ -14,5 +14,8 @@ RUN npm run build --prod
 
 FROM nginx:1.19.10-alpine
 
-COPY --from=builld-step /app/dist/biblioteca-valle-frond-end /usr/share/nginx/html
+COPY --from=build-step /app/dist/biblioteca-valle-frond-end /usr/share/nginx/html
+
+EXPOSE 87
+
 

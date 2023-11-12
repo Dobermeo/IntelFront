@@ -1,0 +1,27 @@
+.example-card {
+    max-width: 90%;
+    margin: 1% auto;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+  .imagebox:hover .imagebox-desc {
+    padding-bottom: 10%;
+  }
+  .example-iframe{
+    width: 100%;
+    height: 100%;
+  }
+  .example-sidenav-content {
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 780px;
+    background-size: cover; /* Center the image */
+    width: 1720px;
+    text-align: center;
+    align-content: center;
+  }
+  

@@ -45,6 +45,17 @@ import { PerfilComponent } from './crudusuario/perfil/perfil/perfil.component';
 import { Juego2Component } from './Juegos/juego2/juego2.component';
 import { Juego3Component } from './Juegos/juego3/juego3.component';
 import { Juego4Component } from './Juegos/juego4/juego4.component';
+import { Juego5Component } from './Juegos/juego5/juego5.component';
+import { Juego6Component } from './Juegos/juego6/juego6.component';
+import { Juego7Component } from './Juegos/juego7/juego7.component';
+import { Juego8Component } from './Juegos/juego8/juego8.component';
+import { Juego9Component } from './Juegos/juego9/juego9.component';
+import { Juego10Component } from './Juegos/juego10/juego10.component';
+import { Juego11Component } from './Juegos/juego11/juego11.component';
+import { Juego12Component } from './Juegos/juego12/juego12.component';
+import { Juego13Component } from './Juegos/juego13/juego13.component';
+import { Juego14Component } from './Juegos/juego14/juego14.component';
+import { Juego15Component } from './Juegos/juego15/juego15.component';
 registerLocaleData(localeEs, 'es')
 
 
@@ -206,6 +217,39 @@ const routes: Routes = [
     path: 'juegos/juego4',
     component: Juego4Component
   },{
+    path: 'juegos/juego5',
+    component: Juego5Component
+  },{
+    path: 'juegos/juego6',
+    component: Juego6Component
+  },{
+    path: 'juegos/juego7',
+    component: Juego7Component
+  },{
+    path: 'juegos/juego8',
+    component: Juego8Component
+  },{
+    path: 'juegos/juego9',
+    component: Juego9Component
+  },{
+    path: 'juegos/juego10',
+    component: Juego10Component
+  },{
+    path: 'juegos/juego11',
+    component: Juego11Component
+  },{
+    path: 'juegos/juego12',
+    component: Juego12Component
+  },{
+    path: 'juegos/juego13',
+    component: Juego13Component
+  },{
+    path: 'juegos/juego14',
+    component: Juego14Component
+  },{
+    path: 'juegos/juego15',
+    component: Juego15Component
+  },{
     path: 'juegos/puntajes',
     component: PuntajesComponent
   },{
@@ -257,6 +301,17 @@ const routes: Routes = [
     Juego2Component,
     Juego3Component,
     Juego4Component,
+    Juego5Component,
+    Juego6Component,
+    Juego7Component,
+    Juego8Component,
+    Juego9Component,
+    Juego10Component,
+    Juego11Component,
+    Juego12Component,
+    Juego13Component,
+    Juego14Component,
+    Juego15Component,
   ],
   imports: [
     CommonModule,

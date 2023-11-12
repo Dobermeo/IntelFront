@@ -6,13 +6,13 @@ import {PersonaUsuario} from "../../../../models/personaUsuario";
 import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 
 @Component({
-  selector: 'app-juego4',
-  templateUrl: './juego4.component.html',
-  styleUrls: ['./juego4.component.css']
+  selector: 'app-juego8',
+  templateUrl: './juego8.component.html',
+  styleUrls: ['./juego8.component.css']
 })
-export class Juego4Component implements OnInit {
+export class Juego8Component implements OnInit {
 
-  url: string = "https://juego3ie.web.app/";
+  url: string = "https://juego8ie.web.app/";
   urlSafe: SafeResourceUrl;
   public puntuacionJuego: number = 0; // línea para definir la variable puntuacionJuego
 
@@ -51,7 +51,7 @@ onMessage(event) {
       id: 1,
       puntuacion: 0,
       intento: 0,
-      idJuego: 4,
+      idJuego: 8,
       idUsuario: usuario.id
     })
   }
