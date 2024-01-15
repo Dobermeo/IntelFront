@@ -16,6 +16,6 @@ FROM nginx:1.19.10-alpine
 
 COPY --from=build-step /app/dist/biblioteca-valle-frond-end /usr/share/nginx/html
 
-EXPOSE 87
+EXPOSE 4200
 
 
