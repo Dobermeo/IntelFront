@@ -1,18 +1,16 @@
-FROM node:16-alpine as build-step
-
-RUN mkdir -p /app
+FROM node:18 AS builder
 
 WORKDIR /app
 
-COPY package.json /app
+COPY package.json package-lock.json ./
 
 RUN npm install
 
-COPY . /app
+COPY . .
 
 RUN npm run build --prod
 
-FROM nginx:1.19.10-alpine
+FROM nginx:alpine
 
 COPY --from=build-step /app/dist/biblioteca-valle-frond-end /usr/share/nginx/html
 
