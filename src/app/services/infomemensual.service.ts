@@ -8,7 +8,7 @@ import { servicioUsado } from '../models/informemensual';
 })
 
 export class informeMensualService {
-    _url = 'http://localhost:8082/api'
+    _url = 'http://31.220.83.117:8082/api'
 
 
     private httpHeaders = new HttpHeaders({
