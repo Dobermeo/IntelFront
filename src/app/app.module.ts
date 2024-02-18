@@ -8,6 +8,7 @@ import {LayoutComponent} from './component/layout/layout.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {HttpClientModule} from "@angular/common/http";
     MaterialModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
