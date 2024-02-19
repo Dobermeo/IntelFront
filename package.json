@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --configuration=production"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
     "angular-cli-ghpages": "^1.0.3",
+    "express": "^4.17.1",
     "docxtemplater": "^3.31.2",
     "file-saver": "^2.0.5",
     "moment": "^2.29.4",
@@ -38,7 +40,8 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.0",
     "@angular/cli": "~14.1.0",
-    "@angular/compiler-cli": "^14.1.0",
+    "@angular/compiler":"~14.1.0",
+    "@angular/compiler-cli": "~14.1.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
@@ -47,5 +50,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
+  },
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.7.1"
   }
 }

@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  URL_APP: 'http://31.220.83.117:8080/api',
+  URL_APP: 'https://intelback-9557d56d89f6.herokuapp.com/api',
   production: true
 };
 
